@@ -1,0 +1,33 @@
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida/proceso2$ gcc memoria.c -o p2
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida/proceso2$ ./p2
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+1
+
+ Variable:	69+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+2
+
+ Variable:	489
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+1
+
+ Variable:	489+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+1
+
+ Variable:	78+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+3
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida/proceso2$

@@ -1,0 +1,113 @@
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ gcc memoria_c.c -o p1
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ ls
+memoria_c.c  p1
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ mkdir proceso2
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ cp memoria_c.c
+cp: falta el operando archivo de destino después de 'memoria_c.c'
+Pruebe 'cp --help' para más información.
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ cp memoria_c.c proceso2/memoria.c
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ ./p1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+^C
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ ./p1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+2
+
+ Variable:	69
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+1
+
+ Variable:	69+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+1
+
+ Variable:	489+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+1
+
+ Variable:	489+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+78
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+2
+
+ Variable:	78
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 Consultar
+ 2 Modificar
+ 3 Finalizar
+3
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ ipcs
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          carlos     600        16384      1          dest         
+0x00000000 5          carlos     600        7372800    2          dest         
+0x00000000 98310      carlos     600        524288     2          dest         
+0x00000000 12         carlos     600        67108864   2          dest         
+0x00000000 13         carlos     600        7372800    2          dest         
+0x00000000 17         carlos     600        524288     2          dest         
+0x00000000 22         carlos     600        524288     2          dest         
+0x00000000 23         carlos     600        524288     2          dest         
+0x00000000 24         carlos     600        524288     2          dest         
+0x00000000 98330      carlos     600        7127040    2          dest         
+0x00000000 131101     carlos     600        3686400    2          dest         
+0x00000000 131102     carlos     600        3686400    2          dest         
+0x00000000 131103     carlos     777        4          1          dest         
+0x00000000 98341      carlos     600        524288     2          dest         
+0x00000000 98342      carlos     600        16777216   2          dest         
+0x00000000 98343      carlos     600        3145728    2          dest         
+0x00000000 98348      carlos     600        524288     2          dest         
+
+------ Matrices semáforo -------
+key        semid      propietario perms      nsems     
+
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$ ipcs
+
+------ Colas de mensajes -----
+key        msqid      propietario perms      bytes utilizados mensajes    
+
+---- Segmentos memoria compartida ----
+key        shmid      propietario perms      bytes      nattch     estado      
+0x00000000 4          carlos     600        16384      1          dest         
+0x00000000 5          carlos     600        7372800    2          dest         
+0x00000000 98310      carlos     600        524288     2          dest         
+0x00000000 12         carlos     600        67108864   2          dest         
+0x00000000 13         carlos     600        7372800    2          dest         
+0x00000000 17         carlos     600        524288     2          dest         
+0x00000000 22         carlos     600        524288     2          dest         
+0x00000000 23         carlos     600        524288     2          dest         
+0x00000000 24         carlos     600        524288     2          dest         
+0x00000000 98330      carlos     600        7127040    2          dest         
+0x00000000 131101     carlos     600        3686400    2          dest         
+0x00000000 131102     carlos     600        3686400    2          dest         
+0x00000000 98341      carlos     600        524288     2          dest         
+0x00000000 98342      carlos     600        16777216   2          dest         
+0x00000000 98343      carlos     600        3145728    2          dest         
+0x00000000 98348      carlos     600        524288     2          dest         
+
+------ Matrices semáforo -------
+key        semid      propietario perms      nsems     
+
+carlos@CubicNev:~/Sistemas Operativos/Memoria COmpartida$
