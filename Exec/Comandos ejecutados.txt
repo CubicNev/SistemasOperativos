@@ -1,0 +1,57 @@
+carlos@CubicNev:~/Sistemas Operativos/Exec$ gcc suma.c -o suma
+carlos@CubicNev:~/Sistemas Operativos/Exec$ gcc ejecutar_proceso.c -o ejecutar_proceso
+carlos@CubicNev:~/Sistemas Operativos/Exec$ ./ejecutar_proceso
+
+---------------------------------- 
+
+Ejecutaré ./suma mediante exec  
+
+---------------------------------- 
+
+++++++++++++++++++++++++++++++++++++++++
+
+Soy el programa ./suma, me invocó exec
+
+La suma de 4.600000 y de 6.900000 es 11.500000
+
+++++++++++++++++++++++++++++++++++++++++
+carlos@CubicNev:~/Sistemas Operativos/Exec$ gcc ejecutar_proceso.c -o ejecutar_proceso
+carlos@CubicNev:~/Sistemas Operativos/Exec$ ./ejecutar_proceso
+
+---------------------------------- 
+
+Ejecutaré ./suma mediante exec  
+
+---------------------------------- 
+total 40
+drwxr-xr-x 2 carlos carlos 4096 mar 27 00:10 .
+drwxr-xr-x 7 carlos carlos 4096 mar 26 23:39 ..
+-rwxrwxr-x 1 carlos carlos 8400 mar 27 00:10 ejecutar_proceso
+-rw-rw-r-- 1 carlos carlos  652 mar 27 00:10 ejecutar_proceso.c
+-rwxrwxr-x 1 carlos carlos 8424 mar 27 00:01 suma
+-rw-rw-r-- 1 carlos carlos  538 mar 26 23:58 suma.c
+carlos@CubicNev:~/Sistemas Operativos/Exec$ gcc ejecutar_procesoMult.c -o ejecutar_procesoMult
+gcc: error: ejecutar_procesoMult.c: No existe el archivo o el directorio
+gcc: fatal error: no input files
+compilation terminated.
+carlos@CubicNev:~/Sistemas Operativos/Exec$ gcc ejecutar_procesosMult.c -o ejecutar_procesosMult
+carlos@CubicNev:~/Sistemas Operativos/Exec$ ./ejecutar_procesosMult
+
+---------------------------------- 
+
+Ejecutaré ./suma mediante exec  
+
+---------------------------------- 
+total 56
+drwxr-xr-x 2 carlos carlos 4096 mar 27 00:18 .
+drwxr-xr-x 7 carlos carlos 4096 mar 26 23:39 ..
+-rwxrwxr-x 1 carlos carlos 8400 mar 27 00:10 ejecutar_proceso
+-rw-rw-r-- 1 carlos carlos  652 mar 27 00:10 ejecutar_proceso.c
+-rwxrwxr-x 1 carlos carlos 8528 mar 27 00:18 ejecutar_procesosMult
+-rw-rw-r-- 1 carlos carlos  784 mar 27 00:17 ejecutar_procesosMult.c
+-rwxrwxr-x 1 carlos carlos 8424 mar 27 00:01 suma
+-rw-rw-r-- 1 carlos carlos  538 mar 26 23:58 suma.c
+
+ Mi hijo termino de ejecutarse 
+carlos@CubicNev:~/Sistemas Operativos/Exec$ ^C
+carlos@CubicNev:~/Sistemas Operativos/Exec$ 
