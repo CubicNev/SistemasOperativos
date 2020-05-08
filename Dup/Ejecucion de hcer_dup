@@ -1,0 +1,14 @@
+carlos@CubicNev:~/Sistemas Operativos/Dup$ ./hacer_dup
+Buenos dias
+carlos@CubicNev:~/Sistemas Operativos/Dup$ gcc hacer_dup.c -o hacer_dup
+carlos@CubicNev:~/Sistemas Operativos/Dup$ ./hacer_dup
+
+ Duplicaremos la salida estandar en 3
+Buenos dias
+carlos@CubicNev:~/Sistemas Operativos/Dup$ gcc hacer_dup.c -o hacer_dup
+carlos@CubicNev:~/Sistemas Operativos/Dup$ ./hacer_dup
+
+ Duplicaremos la salida estandar en 3
+Buenos dias
+
+ Duplicaremos la salida estandar en 0
