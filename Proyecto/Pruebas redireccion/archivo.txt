@@ -1,0 +1,6 @@
+tuberias_comandos.c
+tc
+archivo.txt
+tuberias_comandos.c
+tc
+archivo.txt
